@@ -40,7 +40,10 @@
 
 $(function() {
 
-
+	$('a#toggle-descr').click(function(e){
+		e.preventDefault();
+		$($(this).attr("href")).slideToggle(300);
+	});
 
 	$("body").live('click',function(e) {
 		var node = $(e.target);
@@ -142,7 +145,7 @@ $.fn.liveUpdate = function(list) {
 	this
 		.keyup(filter).keyup()
 		.parents('form').submit(function() {
-		//return false;
+			return false;
 		});
 	}
 
