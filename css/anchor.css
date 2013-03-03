@@ -91,12 +91,14 @@ em{
     text-align: right;
 }
 #description{
-    background-color: #333;
+    background: #222 url(../hook-bg.png) center center;
     display: none;
     color: #aaa;
     padding: 2em 2em;
     margin: 0 0 1em 0;
     font-size: 85%;
+    border-radius: 1em;
+    background-size: 50%;
 }
 
 code{
@@ -127,3 +129,11 @@ footer p{
 .cf:before, .cf:after { content: ""; display: block; }
 .cf:after { clear: both; }
 .ie6 .cf { zoom: 1 }
+
+
+@media (max-width: 33em){
+    body{
+        font-size: 80%;
+    }
+
+}
